@@ -1,0 +1,18 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html {
+    min-height: 100vh;
+    flex-grow: 1;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: bg-black;
+}
+
+.slick-dots li button:before {
+    color: White !important;
+}
