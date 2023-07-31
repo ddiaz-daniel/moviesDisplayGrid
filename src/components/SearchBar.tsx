@@ -1,8 +1,8 @@
 import { Movie } from '@/types/movie';
 import Link from 'next/link';
 import { useState, useEffect, SetStateAction } from 'react';
-import { SearchOutline } from 'react-ionicons';
 import { searchMovies } from '../utilities/getData';
+import { FaSearch } from 'react-icons/fa';
 
 const SearchBar = () => {
 
@@ -38,8 +38,8 @@ const SearchBar = () => {
                     value={searchValue}
                     onChange={handleInputChange}
                 />
-                <div className="absolute right-0 top-0 mt-1 mr-2">
-                    <SearchOutline color={'#00000'} height="20px" width="20px" />
+                <div className="absolute right-0 top-0 mt-2 mr-2">
+                    <FaSearch color={'#00000'} height="30px" width="30px" />
                 </div>
             </form>
             {!!searchResults && searchResults.length > 0 ? (
@@ -64,6 +64,6 @@ const SearchBar = () => {
             </div>}
         </div>
     );
-}
+};
 
 export default SearchBar;
