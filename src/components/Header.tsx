@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { SearchOutline } from 'react-ionicons'
 import SearchBar from "./SearchBar";
 
 
@@ -17,8 +16,8 @@ const Header = () => {
                 </div>
             </nav>
         </header>
-            
+
     );
 };
-            
+
 export default Header;
